@@ -2,50 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* app.css */
+/* index.css */
 
-/* Custom styles */
-@layer base {
-  /* Example base styles */
-  body {
-    font-family: 'Arial', sans-serif;
+/* Ensure sidebar adjusts on small screens */
+.sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sidebar adjustments for specific screen sizes */
+@media (max-width: 375px) {
+  .sidebar {
+    width: 100%;
+    padding: 0 1rem; /* Add padding for small screens */
   }
 }
 
-@layer components {
-  /* Custom components styles */
-  .custom-button {
-    @apply px-4 py-2 bg-blue-500 text-white rounded;
+@media (max-width: 360px) {
+  .sidebar {
+    width: 100%;
+    padding: 0 0.5rem; /* Adjust padding for very small screens */
   }
 }
 
-/* Custom media queries */
-@media (min-width: 640px) { /* sm */
-  .custom-button {
-    @apply px-6 py-3 bg-green-500;
+@media (max-width: 540px) {
+  .sidebar {
+    width: 100%;
+    padding: 0 1rem; /* Consistent padding */
   }
 }
 
-@media (min-width: 768px) { /* md */
-  .custom-button {
-    @apply px-8 py-4 bg-red-500;
+@media (max-width: 720px) {
+  .sidebar {
+    width: 100%;
+    padding: 0 1rem; /* Consistent padding */
   }
 }
 
-@media (min-width: 1024px) { /* lg */
-  .custom-button {
-    @apply px-10 py-5 bg-yellow-500;
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    padding: 0 1rem; /* Consistent padding */
   }
 }
 
-@media (min-width: 1280px) { /* xl */
-  .custom-button {
-    @apply px-12 py-6 bg-purple-500;
+@media (max-width: 667px) {
+  .sidebar {
+    width: 100%;
+    padding: 0 1rem; /* Consistent padding */
   }
 }
 
-@media (min-width: 1536px) { /* 2xl */
-  .custom-button {
-    @apply px-14 py-7 bg-pink-500;
-  }
+
+/* Hover effects for links in sidebar */
+.sidebar ul li a {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #FFC107; /* yellow-900 */
+  color: #FFFFFF; /* white */
+}
+
+.dark .sidebar ul li a:hover {
+  background-color: #4B5563; /* gray-900 */
+  color: #D97706; /* yellow-500 */
 }
