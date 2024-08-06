@@ -63,12 +63,12 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, toggleSidebar }) => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="Users" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
+                            <Link to="About-Me" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
                                 <FaUserCircle className="text-white text-2xl " /><span className="ml-3 text-lg">About</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="bookings" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
+                            <Link to="My-Projects" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
                                 <FaProjectDiagram className="text-white text-2xl" /><span className="ml-3 text-lg">Projects</span>
                             </Link>
                         </li>

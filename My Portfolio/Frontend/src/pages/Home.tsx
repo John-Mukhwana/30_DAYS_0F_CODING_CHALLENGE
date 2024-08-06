@@ -1,13 +1,18 @@
+
 import Profile from "../components/profile";
+import AboutPage from "./about";
+import ProjectsPage from "./Projects";
 
 
 const  Home = () =>{
 
     return(
 
-        <div>
+        <>
             <div><Profile/></div>
-        </div>
+            <div><AboutPage/></div>
+            <div><ProjectsPage/></div>
+        </>
     )
 }
 
