@@ -1,0 +1,122 @@
+/* src/ProfileSection.css */
+/*@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rotating-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  animation: rotate 10s linear infinite;
+}
+
+.icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-0 { top: 0; left: 50%; transform: translate(-50%, -50%); }
+.icon-1 { top: 18%; left: 82%; transform: translate(-50%, -50%); }
+.icon-2 { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+.icon-3 { top: 82%; left: 82%; transform: translate(-50%, -50%); }
+.icon-4 { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+.icon-5 { top: 82%; left: 18%; transform: translate(-50%, -50%); }
+.icon-6 { top: 50%; left: 0%; transform: translate(-50%, -50%); }
+.icon-7 { top: 18%; left: 18%; transform: translate(-50%, -50%); }
+
+
+/* src/ProfileSection.css */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rotating-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+  animation: rotate 10s linear infinite;
+}
+
+.icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+/* Adjust the icon positions for 9 icons */
+.icon-0 { top: 0; left: 50%; transform: translate(-50%, -50%); }
+.icon-1 { top: 18%; left: 82%; transform: translate(-50%, -50%); }
+.icon-2 { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+.icon-3 { top: 82%; left: 82%; transform: translate(-50%, -50%); }
+.icon-4 { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+.icon-5 { top: 82%; left: 18%; transform: translate(-50%, -50%); }
+.icon-6 { top: 50%; left: 0%; transform: translate(-50%, -50%); }
+.icon-7 { top: 18%; left: 18%; transform: translate(-50%, -50%); }
+.icon-8 { top: 0; left: 50%; transform: translate(-50%, -50%); }
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .profile-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .rotating-container {
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

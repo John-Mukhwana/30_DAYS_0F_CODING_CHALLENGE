@@ -15,7 +15,7 @@ const Navbar = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
           <div className="text-3xl font-bold flex items-center ">
             <span className="text-yellow-400">JOHN</span><span className="text-white">Bradley</span>
           </div>
-          <div>
+          <div className='flex '>
             <DarkMode />
           </div>
         </div>

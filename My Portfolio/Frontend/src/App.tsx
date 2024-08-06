@@ -3,6 +3,8 @@
 import { createBrowserRouter,RouterProvider } from "react-router-dom"
 import Dashboard from "./Dashboard/Dashboard"
 import Error from "./pages/error"
+import Home from "./pages/Home"
+
 
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
       children:[
         {
           path: "home",
-          element:<div></div>,
+          element:<Home />,
 
         }
 

@@ -58,7 +58,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, toggleSidebar }) => {
                 <div className="flex-grow overflow-y-auto">
                     <ul className="space-y-2 pt-10 font-bold w-full">
                         <li>
-                            <Link to="AdminHome" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
+                            <Link to="home" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
                                 <FaHome className="text-white text-2xl" /><span className="ml-3 text-lg">Home</span>
                             </Link>
                         </li>
