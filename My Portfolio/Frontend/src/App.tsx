@@ -11,14 +11,14 @@ import ProjectsPage from "./pages/Projects"
 
 function App() {
   const router = createBrowserRouter([
-   
+  
     {
       path: "/",
       element: <Dashboard />,
       errorElement:<Error/>,
       children:[
         {
-          path: "Home",
+          path: "",
           element:<Home />,
 
         },
