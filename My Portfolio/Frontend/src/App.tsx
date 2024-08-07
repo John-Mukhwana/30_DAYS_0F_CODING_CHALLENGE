@@ -6,6 +6,8 @@ import Error from "./pages/error"
 import Home from "./pages/Home"
 import AboutPage from "./pages/about"
 import ProjectsPage from "./pages/Projects"
+import EducationPage from "./pages/education"
+import AchievementPage from "./pages/achievements"
 
 
 
@@ -32,6 +34,17 @@ function App() {
           element:<ProjectsPage />,
 
         },
+        {
+          path: "Education-Background",
+          element:<EducationPage />,
+
+        },
+        {
+          path: "Achievements",
+          element:<AchievementPage />,
+
+        },
+
 
       ],
     },
