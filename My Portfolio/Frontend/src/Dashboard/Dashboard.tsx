@@ -16,7 +16,7 @@ const Dashboard: React.FC = () => {
             <div><Navbar toggleSidebar={toggleSidebar} /></div>
             <div className="flex min-h-screen ">
                 <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-                <main className="flex-1 p-4  bg-gray-800">
+                <main className="flex-1 p-4  bg-gray-900">
                     <Outlet />
                 </main>
             </div>

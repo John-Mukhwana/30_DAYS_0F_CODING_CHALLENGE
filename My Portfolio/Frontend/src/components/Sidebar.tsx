@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { FaFileAlt, FaUserCircle, FaHome, FaProjectDiagram, FaGithub } from 'react-icons/fa';
 import { MdSchool, MdMenu, MdStar, MdPhone } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import IconBar from './Iconbar';
 
 interface SidebarProps {
     isSidebarOpen: boolean;
@@ -41,9 +42,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, toggleSidebar }) => {
     return (
         <aside className={`fixed z-40 bg-emerald-600 dark:bg-gray-900 shadow-2xl transition-transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:relative md:translate-x-0 md:w-64 md:flex md:flex-col`}>
             <div className="flex  flex-col h-full overflow-y-auto">
-                <div className='flex justify-between items-center bg-black dark:bg-white w-full h-10 px-4'>
-                    <h2 className="text-2xl font-semibold text-white dark:text-black">Admin Panel</h2>
-                    <button className="md:hidden text-white dark:text-black" onClick={toggleSidebar}>
+                <div className='flex justify-between items-center bg-gray-700 dark:bg-black w-full h-10 px-4'>
+                    <div className="text-2xl font-semibol dark:text-black"><IconBar/></div>
+                    <button className="md:hidden text-cyan-00 dark:text-white" onClick={toggleSidebar}>
                         <MdMenu className="text-2xl" />
                     </button>
                 </div>

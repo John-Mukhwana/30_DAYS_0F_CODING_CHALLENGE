@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "@mdi/react": "^1.6.1",
     "add": "^2.0.6",
     "daisyui": "^4.12.10",
     "dotenv": "^16.4.5",

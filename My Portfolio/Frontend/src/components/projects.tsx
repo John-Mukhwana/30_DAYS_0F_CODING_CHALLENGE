@@ -58,7 +58,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen p-8">
+    <div className=" text-white min-h-full p-8">
       <div className="container grid mx-auto">
         <div className=' text-center items-center pb-8'>
          <p className="  text-3xl md:text-4xl font-bold mb-4 text-yellow-400"> {'Featured Projects { }'} </p>

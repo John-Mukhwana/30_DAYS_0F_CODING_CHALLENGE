@@ -1,12 +1,19 @@
+
+
+
 import Projects from "../components/projects";
-
-
+import FavoriteRepos from "../components/FavouriteRepos";
 
 const ProjectsPage = () => {
     return (
-        <div>
+        <>
+          <div>
           <Projects />
-        </div>
+          </div>
+          <div>
+          <FavoriteRepos/>
+          </div>
+        </>
     );
     }
 

@@ -24,12 +24,12 @@ const education = [
 
 const Education = () => {
   return (
-    <div className="bg-gray-500 text-white min-h-screen p-8 ">
+    <div className=" text-white min-h-full p-8 ">
       <div className="container mx-auto">
         <div className="text-center items-center pb-8 mt-10">
           <p className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">{'Education { }'}</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 mb-8">
           {education.map((edu, index) => (
             <div key={index} className="relative education-card-container">
               <div className="absolute inset-0 bg-green-500 rounded-lg opacity-10 transform rotate-6 translate-y-4 translate-x-4 hover:bg-green-600 transition-all duration-300"></div>
