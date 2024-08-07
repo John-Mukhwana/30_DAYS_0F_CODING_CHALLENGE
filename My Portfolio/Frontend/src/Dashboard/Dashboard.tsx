@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import { Outlet } from 'react-router-dom';
@@ -13,14 +15,14 @@ const Dashboard: React.FC = () => {
 
     return (
         <>
-            <div><Navbar toggleSidebar={toggleSidebar} /></div>
-            <div className="flex min-h-screen ">
+            <Navbar toggleSidebar={toggleSidebar} />
+            <div className="flex flex-col md:flex-row min-h-screen">
                 <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-                <main className="flex-1 p-4  bg-gray-900">
+                <main className="flex-1 p-4 bg-gray-950 w-full md:w-screen">
                     <Outlet />
                 </main>
             </div>
-            <div><Footer /></div>
+            <Footer />
         </>
     );
 };

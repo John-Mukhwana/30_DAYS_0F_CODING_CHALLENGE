@@ -37,7 +37,7 @@ const FavoriteRepos: React.FC = () => {
 
   return (
     <div className="p-6">
-      <h2 className="text-4xl text-center font-semibold text-yellow-500 dark:text-black mb-6">{'Favourite Repos { }'}</h2>
+      <h2 className="text-4xl text-center font-semibold text-yellow-500 mb-6">{'Favourite Repos { }'}</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {repos.map((repo, index) => (
           <div key={index} className="repo-card bg-gray-800 text-white rounded-lg shadow-lg max-w-xs">

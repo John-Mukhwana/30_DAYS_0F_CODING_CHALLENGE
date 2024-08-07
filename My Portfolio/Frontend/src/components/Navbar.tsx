@@ -3,7 +3,7 @@ import { MdMenu } from 'react-icons/md';
 
 const Navbar = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
-    <div className="">
+    <div className=" w-full">
       {/* Navbar */}
       <nav className="bg-sky-800 dark:bg-gray-700 text-white p-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
