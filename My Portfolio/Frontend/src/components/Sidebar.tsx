@@ -45,7 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, toggleSidebar }) => {
             <div className="flex  flex-col h-full overflow-y-auto">
                 <div className='flex justify-between items-center bg-gray-700 dark:bg-black w-full h-10 px-4'>
                     <div className="text-2xl font-semibol dark:text-black"><IconBar/></div>
-                    <button className="md:hidden text-cyan-00 dark:text-white" onClick={toggleSidebar}>
+                    <button className="md:hidden text-cyan-500 dark:text-white" onClick={toggleSidebar}>
                         <MdMenu className="text-2xl" />
                     </button>
                 </div>
