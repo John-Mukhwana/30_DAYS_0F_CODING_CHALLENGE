@@ -5,6 +5,7 @@ import { FaFileAlt, FaUserCircle, FaHome, FaProjectDiagram, FaGithub } from 'rea
 import { MdSchool, MdMenu, MdStar, MdPhone } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import IconBar from './Iconbar';
+import '../Styles/Sidebar.css';
 
 interface SidebarProps {
     isSidebarOpen: boolean;
