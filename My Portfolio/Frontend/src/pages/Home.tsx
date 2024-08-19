@@ -2,6 +2,7 @@
 import Profile from "../components/profile";
 import AboutPage from "./about";
 import AchievementPage from "./achievements";
+import ContactMePage from "./contactMePage";
 import EducationPage from "./education";
 import ProjectsPage from "./Projects";
 
@@ -16,6 +17,7 @@ const  Home = () =>{
             <div><ProjectsPage/></div>
             <div><EducationPage/></div>
             <div><AchievementPage/></div>
+            <div><ContactMePage/></div>
         </>
     )
 }

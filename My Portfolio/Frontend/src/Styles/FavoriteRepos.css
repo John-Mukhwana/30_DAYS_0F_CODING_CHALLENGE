@@ -19,7 +19,7 @@
     left: 0;
     height: 100%; /* 3/4 of the card height */
     width: 100%;
-    border: 2px solid #ecc94b;;
+    border: 2px solid rgb(20, 197, 82);;
     border-radius: 5px; /* Tailwind's border-gray-700 */
     border-right:none;
     border-top:none;

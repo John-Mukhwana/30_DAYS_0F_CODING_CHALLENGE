@@ -1,27 +1,37 @@
+
+
+
+
+
 import DarkMode from '../components/Theme';
 import { MdMenu } from 'react-icons/md';
 
 const Navbar = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
-    <div className=" w-full">
+    <div className="w-full gap-4">
       {/* Navbar */}
       <nav className="bg-sky-800 dark:bg-gray-700 text-white p-4 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          {/* Toggle Button */}
-          <button className="md:hidden text-white" onClick={toggleSidebar}>
-            <MdMenu className="text-2xl" />
+        <div className="container mx-auto flex items-center justify-between">
+          {/* Left Side: Menu Toggle Button */}
+          <button className="md:hidden text-white text-2xl" onClick={toggleSidebar}>
+            <MdMenu />
           </button>
+          
           {/* Logo */}
-          <div className="text-3xl font-bold flex items-center ">
-            <span className="text-yellow-400">JOHN</span><span className="text-white">Bradley</span>
+          <div className="text-2xl font-terminus font-bold flex-grow text-center md:text-left">
+            <span className='text-sm font-inconsolata text-yellow-400 dark:text-green-400'>_The</span>
+            <span className="text-green-400 dark:text-yellow-400">John</span>
+            <span className="text-white">Bradley</span>
           </div>
-          <div className='flex '>
+          
+          {/* Right Side: Dark Mode Toggle */}
+          <div className="flex items-center ">
             <DarkMode />
           </div>
         </div>
       </nav>
     </div>
   );
-}
+};
 
 export default Navbar;

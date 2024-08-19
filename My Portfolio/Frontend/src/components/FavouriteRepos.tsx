@@ -37,7 +37,7 @@ const FavoriteRepos: React.FC = () => {
 
   return (
     <div className="p-6">
-      <h2 className="text-4xl text-center font-semibold text-yellow-500 mb-6">{'Favourite Repos { }'}</h2>
+      <h2 className="text-4xl text-center font-semibold text-white dark:text-yellow-400 mb-6">{'Favourite Repos { }'}</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {repos.map((repo, index) => (
           <div key={index} className="repo-card bg-gray-800 text-white rounded-lg shadow-lg max-w-xs">
@@ -53,7 +53,7 @@ const FavoriteRepos: React.FC = () => {
               href={repo.repoLink} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="block bg-yellow-500 text-black py-2 px-4 rounded-lg font-semibold text-center mx-auto max-w-fit"
+              className="block bg-green-400 hover:bg-yellow-400 dark:hover:bg-green-600  dark:bg-yellow-500 text-black py-2 px-4 rounded-lg font-semibold text-center mx-auto max-w-fit"
             >
               Visit Repo &rarr;
             </a>

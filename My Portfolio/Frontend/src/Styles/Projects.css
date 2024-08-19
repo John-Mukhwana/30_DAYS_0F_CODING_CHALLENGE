@@ -43,8 +43,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #ffeb3b; /* Yellow text */
-    text-shadow: 0 0 10px rgba(255, 235, 59, 0.5); /* Glowing effect */
+   
   }
   
   .project-card-description {

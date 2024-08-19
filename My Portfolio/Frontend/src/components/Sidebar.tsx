@@ -14,12 +14,12 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, toggleSidebar }) => {
     const [profilePicture, setProfilePicture] = useState<string | null>(null);
-    const [userName] = useState<string>('John Bradill Mukwana');
+    const [userName] = useState<string>('<John.B.Mukhwana/>');
 
     useEffect(() => {
         const fetchProfilePicture = async () => {
             try {
-                const response = await fetch('https://res.cloudinary.com/dbczn8b8l/image/upload/v1721572329/rxyxql96y331qpsgo20r.jpg'); // Replace with your Cloudinary URL
+                const response = await fetch('https://res.cloudinary.com/dbczn8b8l/image/upload/v1723411446/rb3znmfhtghbapadvboe.jpg'); // Replace with your Cloudinary URL
                 if (response.ok) {
                     setProfilePicture(response.url);
                 } else {
@@ -45,7 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, toggleSidebar }) => {
             <div className="flex  flex-col h-full overflow-y-auto">
                 <div className='flex justify-between items-center bg-gray-700 dark:bg-black w-full h-10 px-4'>
                     <div className="text-2xl font-semibol dark:text-black"><IconBar/></div>
-                    <button className="md:hidden text-cyan-500 dark:text-white" onClick={toggleSidebar}>
+                    <button className="md:hidden text-cyan-500 dark:text-yellow-400" onClick={toggleSidebar}>
                         <MdMenu className="text-2xl" />
                     </button>
                 </div>
@@ -55,7 +55,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, toggleSidebar }) => {
                         alt="Profile"
                         className="w-24 h-24 rounded-full border-2 border-gray-300"
                     />
-                    <p className="mt-2   text-2xl font-bold text-yellow-400 dark:text-white">{userName}</p>
+                    <p className="mt-2 font-jetbrains  text-2xl font-bold text-black dark:text-white">{userName}</p>
                 </div>
                 <div className="flex-grow overflow-y-auto">
                     <ul className="space-y-2 pt-10 font-bold w-full">
@@ -85,17 +85,17 @@ const Sidebar: React.FC<SidebarProps> = ({ isSidebarOpen, toggleSidebar }) => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="ticketsPage" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
+                            <Link to="" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
                                 <FaFileAlt className="text-white text-2xl" /><span className="ml-3 text-lg">Resume</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="FleetsPage" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
+                            <Link to="Favourite-Repositories" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
                                 <FaGithub className="text-white text-2xl" /><span className="ml-3 text-lg">Top Repositories</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="Reports" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
+                            <Link to="Contact-Me" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-yellow-900 hover:text-white dark:hover:text-yellow-500" onClick={handleLinkClick}>
                                 <MdPhone className="text-white text-2xl" /><span className="ml-3 text-lg ">Contact Me</span>
                             </Link>
                         </li>

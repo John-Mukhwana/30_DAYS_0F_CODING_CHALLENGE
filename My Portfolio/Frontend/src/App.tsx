@@ -8,6 +8,8 @@ import AboutPage from "./pages/about"
 import ProjectsPage from "./pages/Projects"
 import EducationPage from "./pages/education"
 import AchievementPage from "./pages/achievements"
+import ContactMePage from "./pages/contactMePage"
+import FavoritePage from "./pages/favouriteRepos"
 
 
 
@@ -44,6 +46,17 @@ function App() {
           element:<AchievementPage />,
 
         },
+        {
+          path: "Contact-Me",
+          element:<ContactMePage/>,
+
+        },
+        {
+          path: "Favourite-Repositories",
+          element:<FavoritePage/>,
+
+        },
+
 
 
       ],
